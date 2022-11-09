@@ -11,6 +11,10 @@ ul {
     display: flex;
     align-items: center;
 }
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
     /* Основний колір #212121; */
     /* Другорядний колір #757575; */
@@ -27,7 +31,7 @@ ul {
 
 /*               Site nav             */
 .page-header{
-    border-bottom: 1px solid var(--border-header);
+    border-bottom: 1px solid #ECECEC;
 }
 .logo-link{
     display: block;
@@ -49,19 +53,30 @@ ul {
 }
 
 .container{
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
 }
-.site-nav{
-    display: flex;
+.conteiner:nth-child(3) {
+    background-color: #F5F4FA;
+  }
+
+.nav{
     margin-left: 93px;
 }
+.site-nav{
+    display: flex;
+}
+
 .list{
     padding-left: 0;
 }
 
 .site-nav .item{
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-right: 50px;
 }
 .site-nav .link{
@@ -105,7 +120,9 @@ ul {
     margin-left: auto;
 }
 .auth-nav .list{
+    padding-left: 0;
     justify-content: left;
+    margin: 0;
 }
 
 .auth-nav .item + .item{
@@ -145,7 +162,7 @@ ul {
 .hero{
     text-align: center;
     background-color: #2F303A;
-    margin-bottom: 94px;
+    padding: 200px;
 }
 .hero-title{
     margin-top: 0;
@@ -159,11 +176,13 @@ ul {
 }
 .btn-hero:hover,
 .btn-hero:focus{
-    color: #2196F3;
+    color: #FFFFFF;
 }
+
 .btn-hero{
     border: none;
-    padding: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px;
     margin: 0 auto;
     color: #FFFFFF;
     background-color: #2196F3;
@@ -193,7 +212,7 @@ ul {
 
 .section-title{
     margin-top: 0;
-    margin-bottom: 94px;
+    margin-bottom: 50px;
     color: #212121;
     font-size: 36px;
     line-height: 1.1666;
@@ -206,7 +225,7 @@ ul {
     display: flex;
     padding-left: 0;
     margin-top: 0;
-    margin-bottom: 94px;
+    
 }
 
 .feature-list .title{
@@ -219,13 +238,13 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.feature-list .text:last-child{
-    margin-right: 0;
-}
 .feature-list .item{
     width: 270px;
     margin-top: 0;
     margin-right: 30px;
+}
+.feature-list .item:last-child{
+    margin-right: 0;
 }
 .feature-list .text{
     margin-top: 0;
@@ -239,14 +258,14 @@ ul {
 /*---------------- Section pic------------ */
 .section-title .pic{
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 0;
+}
+.img{
+    display: block;
 }
 
-
 .section-pic{
-    justify-content: space-around;
     margin-top: 0;
-    margin-bottom: 94px;
     display: flex;
     gap: 30px;
     padding-left: 0;
@@ -256,7 +275,6 @@ ul {
     text-align: center;
 }
 .team{
-    justify-content: space-around;
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
@@ -266,7 +284,9 @@ ul {
 .border{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 94px;
+}
+.team-div{
+    padding: auto;
 }
 .title-section{
     margin-top: 0;
@@ -283,7 +303,6 @@ ul {
 }
 .description{
     margin-top: 0;
-    margin-bottom: 30px;
     color: #757575;
     font-weight: 400;
     font-size: 16px;
@@ -293,8 +312,13 @@ ul {
 }
 /* --------------------Footer------------------ */
 .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2F303A;
     font-style: none;
+}
+.logo-link .footer{
+    padding: 0;
 }
 .footer .logo-header{
     color: #FFFFFF;
@@ -302,7 +326,6 @@ ul {
 .logo-link.footer{
     background-color: #2F303A;
     margin-top: 0;
-    margin-bottom: 30px;
 }
 .footer-info{
     margin-bottom: 9px;
@@ -349,10 +372,11 @@ ul {
 
 /*--------------------- Портфоліо--------------- */
 .btn-list{
-    margin-top: 94px;
+    margin-top: 0;
     justify-content: center;
 }
 .btn-list{
+    padding-top: 94px;
     display: flex;
     padding-left: 0;
     margin-bottom: 50px;
@@ -360,7 +384,8 @@ ul {
 
 .button-nav:hover,
 .button-nav:focus{
-    color: #2196F3;
+    background-color: #2196F3;
+    color: #F5F4FA;
 }
 
 .button-nav{
@@ -385,37 +410,36 @@ ul {
 * {
     box-sizing: border-box;
 }
-
 .flex-container{
-    justify-content: space-around;
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
 }
+.footer-div{
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
 .flex-element{
-    border: 1px solid #EEEEEE;
+    text-align: left;
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
 }
-
 .flex-element:nth-child(3n) {
     margin: 0;
 }
-.flex-element:nth-last-child(-n + 3){
-    margin-bottom: 0;
-}
 .pic-img{
+    display: block;
+    width: 100%;
+    height: auto;
     margin-top: 0;
     margin-bottom: 20px;
-    border: 1px solid #EEEEEE;
 }
 .sub-title{
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-top: 0;
     margin-bottom: 4px;
     font-size: 18px;
     line-height: 2;
@@ -423,10 +447,9 @@ ul {
     color: #212121;
 }
 .content{
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;

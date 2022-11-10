@@ -325,8 +325,7 @@ p {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
-.logo-link .ftr{
+.logo-link.ftr{
     display: block;
     margin-bottom: 20px;
 }

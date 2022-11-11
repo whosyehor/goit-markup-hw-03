@@ -84,8 +84,6 @@ p {
 }
 
 .site-nav .item{
-    padding-top: 15px;
-    padding-bottom: 15px;
     margin-right: 50px;
 }
 .site-nav .link{
@@ -105,6 +103,9 @@ p {
     color: #2196F3;
 }
 .link-current{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
@@ -115,6 +116,9 @@ p {
     color: #2196F3;
 }
 .link-nav{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: #212121;
     font-weight: 500;
     font-size: 14px;
@@ -140,6 +144,9 @@ p {
     text-decoration: none;
 }
 .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color:#757575;
     font-weight: 500;
     font-size: 14px;
@@ -154,6 +161,9 @@ p {
     text-decoration: none;
 }
 .phone-number{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
